@@ -12,33 +12,35 @@ public class Main {
         task3();
         task4();
     }
-    public static void task1(){
-        System.out.println("Задача 1");
-        for (int i: nums){
-        if (i%2!=0){
-            System.out.println(i);}
-        }
-    }
 
-    public static void task2(){
-        System.out.println("Задача 2");
-        Collections.sort(nums);
-        int number = Integer.MAX_VALUE;
-        for (int i:nums){
-            if (i%2==0&&i!=number){
+    public static void task1() {
+        System.out.println("Задача 1");
+        for (int i : nums) {
+            if (i % 2 != 0) {
                 System.out.println(i);
-                number=i;
             }
         }
     }
 
-    public static void task3(){
+    public static void task2() {
+        System.out.println("Задача 2");
+        Collections.sort(nums);
+        int number = Integer.MAX_VALUE;
+        for (int i : nums) {
+            if (i % 2 == 0 && i != number) {
+                System.out.println(i);
+                number = i;
+            }
+        }
+    }
+
+    public static void task3() {
         System.out.println("Задача 3");
         Set<String> randomWords = new HashSet<>(words);
         System.out.println(randomWords);
     }
 
-    public static void task4(){
+    public static void task4() {
         System.out.println("Задача 4");
         Set<String> randomWords = new HashSet<>(words);
         System.out.println(words.size() - randomWords.size());
